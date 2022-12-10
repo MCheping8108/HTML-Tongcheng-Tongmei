@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>照片拼图</title>
+		<meta charset="UTF-8" />
+		<style>
+			body {
+				background: skyblue;
+			}
+			.wrap {
+				font-size: 0;
+			}
+			.container {
+				width: 780px;
+				margin: 50px auto;
+			}
+			/*为预留图片设置居中
+			 * 类名为big的元素宽289px，高500px，左浮动
+			 *类名为.wrap的元素宽444px,左浮动
+			 * 类名为small的元素宽444，高250px
+			 */
+			.big {
+				width: 289px;
+				height: 500px;
+				float: left;
+			}
+
+			.wrap {
+				width: 444px;
+				float: left;
+
+			}
+
+			.small {
+				width: 444px;
+				height: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="images/img1.jpg" class="big"/>
+			<div class="wrap">
+				<img src="images/img2.jpg" class="small"/>
+				<img src="images/img3.jpg" class="small"/>
+			</div>
+		</div>
+	</body>
+</html>
