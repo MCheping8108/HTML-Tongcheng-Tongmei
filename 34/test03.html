@@ -17,7 +17,19 @@
 			 * 结束动画帧 距离顶部200px
 			 * 动画持续时间为2s
 			 */	
-			
+			img {
+				-moz-animation: changes 2s;
+				animation: changes 2s;
+			}
+
+			@keyframes changes {
+				0% {
+					margin-top: 600px;
+				}
+				100% {
+					margin-top: 200px;
+				}
+			}
 		</style>
 	</head>
 	<body>

@@ -33,7 +33,19 @@
 			 * 当鼠标移入div时，图片旋转180度
 			 * 动画持续时间1秒，播放两次
 			 */
+			.wrap:hover .btn {
+				animation: changes 1s 2;
+			}
 			
+			@keyframes changes {
+				0% {
+					transform: rotate(0);
+				}
+
+				100% {
+					transform: rotate(180deg);
+				}
+			}
 		</style>
 	</head>
 	<body>

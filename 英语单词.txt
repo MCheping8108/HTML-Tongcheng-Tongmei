@@ -30,3 +30,23 @@ transition 过度
 property 属性
 duration 持续
 second 秒
+animation 动画
+keyframes 关键帧
+iteration 重复
+orderde 有序的
+unordered 无序的
+list 列表
+item 列表项
+list-style-type
+      disc 实心圆
+      circle 空心圆
+      square 实心方块
+      none 啥也没有
+
+input 输入
+password 密码
+placeholder 占位符
+checkbox 复选框
+select 选择
+submit 提交
+definition 定义
