@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>亲自出码</title>
+		<style>
+			#tt {
+				width: 200px;
+				height: 30;
+				border: 4px solid yellow;
+				border-radius: 18px;
+				margin-top: 35%;
+			}
+			#txtBoder {
+				width: 210px;
+				height: 200px;
+				border-radius: 18px;
+				border: 4px solid paleturquoise;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="txtBoder">
+			<input type="text" id="tt" placeholder="请按下一个按键~"/>
+		</div>
+		<script>
+			var inputTxt = document.getElementById("tt");
+			inputTxt.onkeyup = function(e) {
+				var keyCode = e.keyCode;
+				alert("此按键的键码值是：" + keyCode);
+			}
+		</script>
+	</body>
+</html>
