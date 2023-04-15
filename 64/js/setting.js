@@ -19,6 +19,12 @@ function validate(i) {
 			return false;
 		}
 		//昵称不能含有国家名称
+		var reg2 = /^china$/;
+		if (userName.match(reg2)){
+			alert("该名字含有政治敏感，请重新输入");
+			inputsArr[i].value = "";
+			return false;
+		}
 		
 	}
 	if (i == 3){

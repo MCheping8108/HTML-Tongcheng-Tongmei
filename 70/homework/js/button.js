@@ -1,8 +1,13 @@
 //请在下方写你的代码：实现添加头像的功能
 
+
 //获取id为heroHead的ul存储在变量ulHead中
+var ulHead = document.getElementById('heroHead'); //gets the ul element with the id of "ulHead" from the page. The id
+
 
 //创建数组arrHead存储li
+var arrHead = []; //creates an empty array called arrHead. The array is a reference to the list of li elements in the ulHead.
+
 
 
 /* (预留)循环创建15个li并分别为其设置背景图yx01.jpg,yx02.jpg...

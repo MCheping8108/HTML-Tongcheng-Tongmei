@@ -38,6 +38,7 @@
 				line-height: 40px;
 				color: rgb(24, 24, 32);
 				font-weight: bold;
+				cursor: pointer;
 			}
 		</style>
 	</head>
@@ -59,10 +60,9 @@
 			
 			word.onblur = function() {
 				//请在下方写你的代码：将新名字添加到列表中
-				
-				
-				
-				
+				var temp = document.createElement("li");
+				temp.innerHTML = word.value;
+				list.append(temp);
 			}
 		</script>
 	</body>
