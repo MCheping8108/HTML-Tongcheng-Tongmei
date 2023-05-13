@@ -21,7 +21,18 @@
 		</div>
 		<script>
 			window.onload = function() {
-				
+				var rabbite = document.getElementById("rabbite");
+				var date1 = new Date().getTime();
+				var i = 0;
+				setInterval(function(){
+					rabbite.style.left = i + "px";
+					if (i == 300){
+						var date2 = new Date().getTime();
+						var date = (date2-date1)/1000;
+						alert("比赛历时："+date+"秒");
+					}
+					i++;
+				},10)	
 			}
 		</script>
 	</body>
