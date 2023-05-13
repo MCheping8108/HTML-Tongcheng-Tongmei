@@ -5,9 +5,14 @@
 		<title></title>
 	</head>
 	<body>
-		
+		请输入大写字母：
+		<input type="text" id="txt">
 		<script>
-			
+			var txt = document.getElementById("txt");
+			txt.onkeyup = function(){
+				var val = this.value;
+				this.value = val.toUpperCase();
+			}
 		</script>
 	</body>
 </html>

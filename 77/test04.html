@@ -9,7 +9,11 @@
 		<br/>
 		<input type="text" id="txt" maxlength="3"/>
 		<script>
-			
+			var input = document.getElementById("txt");
+			input.onkeydown = function(){
+				alert("你按下了按键")
+				window.close();
+			}
 		</script>
 	</body>
 </html>

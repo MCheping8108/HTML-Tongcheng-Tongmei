@@ -4,7 +4,13 @@ var txt = document.getElementById("txt");
 var prompt = document.getElementById("prompt");
 var txtNum = 200;
 publish.onclick = function() {
-	f();
+	if (txt.value.length>200){
+		alert("字数过多，请重新输入");
+		txt.style.color = "black";
+	}else{
+		f();
+	}
+	
 }
 function f() {
 	var diary = document.createElement('div');
@@ -23,6 +29,17 @@ function getTime() {
 	var myDate = new Date(), nowMonth = myDate.getMonth(), nowDay = myDate.getDate(), nowHour = myDate.getHours(), nowMin = myDate.getMinutes();
 	var nowTime = nowMonth + 1 + '月' + nowDay + '日' + nowHour + ':' + nowMin;
 	return nowTime;
+}
+
+txt.onkeyup = function(){
+	var txtNum = 200-txt.value.length;
+	prompt.innerHTML = "还可以输入"+txtNum+"个字";
+	if (txtNum < 0){
+		prompt.innerHTML = "字数超额，请重新输入";
+		prompt.style.color = "red";
+	}else{
+		prompt.style.color = "black";
+	}
 }
 
 
