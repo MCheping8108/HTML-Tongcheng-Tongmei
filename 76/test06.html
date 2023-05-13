@@ -21,7 +21,10 @@
 			<div id="nowDate"></div>
 		</div>
 		<script>
-			
+			var nowDate = document.getElementById("nowDate");
+			var myNowDate = new Date().getTime();
+			var nowMinute = myNowDate / 1000;
+			nowDate.innerHTML = nowMinute + "s";
 		</script>
 	</body>
 </html>

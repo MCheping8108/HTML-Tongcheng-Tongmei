@@ -38,7 +38,18 @@
 		<script>
 			window.onload = function() {
 				//计算小球从左到右的移动时间，将结果利用alert弹框弹出
-				
+				var ball = document.getElementById("ball");
+				var date1 = new Date().getTime();
+				var i = 0;
+				setInterval(function(){
+					ball.style.left = i + "px";
+					if (i == 310){
+						var date2 = new Date().getTime();
+						var date = (date2-date1)/1000;
+						alert("用时："+date+"秒");
+					}
+					i++;
+				},10)
 			}
 		</script>
 	</body>
