@@ -9,9 +9,20 @@
         img {
             width: 200px;
             height: 200px;
+            animation: identifier 3s;
         }
         /*在下方写你的代码：完成自己喜欢的动画效果*/
-        
+        @keyframes identifier {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>

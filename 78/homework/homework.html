@@ -35,7 +35,11 @@
 		</div>
 		<script>
 			//在结尾插入这首诗的最后一句
-			
+			var poem = document.getElementById("poem");
+			var newP = document.createElement("p");
+			newP.innerHTML = "人生自古谁无死？留取丹心照汗青。";
+			newP.style.color = "red";
+			poem.insertBefore(newP,poem.childNodes[16]);
 		</script>
 	</body>
 </html>
