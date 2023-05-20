@@ -1,6 +1,6 @@
 // 在下方写你的代码：完成“关于我们”页面功能
 var list = document.getElementsByClassName("list");
-var frams = document.getElementsByClassName("frame");
+var frames = document.getElementsByClassName("frame");
 for(var i = 0;i<list.length;i++) {
       clickHandle(i,list[i]);
 }
