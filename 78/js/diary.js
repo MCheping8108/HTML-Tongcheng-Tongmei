@@ -26,7 +26,8 @@ function f() {
 	var time = document.createElement("span");
 	//创建diary，并将diary添加为第一个节点
 	var diary = document.createElement("div");
-	show.appendChild(diary);
+	// show.appendChild(diary);
+	show.insertBefore(diary,show.firstChild);
 	diary.appendChild(p);
 	diary.appendChild(time);
 	//创建x并添加到页面

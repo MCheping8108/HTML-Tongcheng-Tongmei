@@ -32,7 +32,13 @@
 			</button>
 		</div>
 		<script>
-			
+			// 输入框变成按钮
+			var btn = document.getElementById("btn");
+			var input = document.getElementById("put");
+			btn.onclick = function() {
+				input.setAttribute("type","button");
+				alert("你点击了按钮")
+			}
 		</script>
 	</body>
 </html>

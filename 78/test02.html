@@ -7,9 +7,19 @@
 		</style>
 	</head>
 	<body>
-		
+		<ul id="mylist">
+			<li>
+				Item1
+			</li>
+			<li>Item2</li>
+			<li>Item3</li>
+		</ul>
 		<script>
-			
+			var element = document.getElementById("mylist");
+			var newLi = document.createElement("li");
+			newLi.innerHTML = "new item";
+			newLi.style.color="red";
+			element.insertBefore(newLi,element.childNodes[4]);
 		</script>
 	</body>
 </html>
