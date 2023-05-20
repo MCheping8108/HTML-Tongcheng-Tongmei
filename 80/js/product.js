@@ -15,4 +15,11 @@ window.onscroll = function(){
 }
 
 // 在下方写你的代码： 绑定点击事件
-
+back.onclick = function() {
+  var left = this.getAnimations(sidebar).left;
+  if(left == "0px"){
+    sidebar.style.left = "-150px";
+  }else {
+    sidebar.style.left = "0px";
+  }
+}
