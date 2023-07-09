@@ -51,3 +51,7 @@ select 选择
 submit 提交
 definition 定义
 key 键；钥匙；密钥
+browser 浏览器
+server 服务器
+domain 域名
+port 端口
