@@ -55,3 +55,6 @@ browser 浏览器
 server 服务器
 domain 域名
 port 端口
+debug 调试
+render 渲染
+template 模板
